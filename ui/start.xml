@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MOML>
+ <UILAYOUT portrait="320,460" landscape="320,460">
+		<CONTAINER id="main" layout="0,0,320,460" src="main.xml" />
+		<WINDOW id="splashScreen" layout="0,0,320,460" align="linear:vertical|center" defaultImg="#ffffff">
+			<IMAGE id="intro" layout="200sr,185sr" defaultImg="/res/intro.png" visible="invisible" />
+		</WINDOW>
+	</UILAYOUT>
+
+	<CMD cmd="animation.show('intro', 'fade', 'easeIn3', 2000, '')" />
+	<CMD cmd="animation.hide('splashScreen', 'fade', '', 1000, '')" delay="5000"/>
+</MOML>
